@@ -89,10 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
             previousIndex=currentIndex;
             currentIndex=index;
 
-            // 停止當前音訊
-            // 註: 你的原始碼中，即使點擊同一個 tab，也會執行 stop() 和 play()。
-            // 為了簡化邏輯和確保音訊切換，我們在切換 tab 時無條件停止當前音訊並播放新的。
-            // 如果 index == previousIndex，則可以考慮只 resume() 或什麼都不做，但你原始碼的邏輯是重新播放。
+
             player.stop();
 
             String audioAsset = '';
@@ -121,9 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// ----------------------------------------------------
-// Screen1 - 自我介紹 (維持不變)
-// ----------------------------------------------------
+
 class Screen1 extends StatelessWidget {
   Screen1({super.key});
 
@@ -193,9 +188,7 @@ class Screen1 extends StatelessWidget {
   }
 }
 
-// ----------------------------------------------------
-// Screen2 - 學習歷程 (新增)
-// ----------------------------------------------------
+
 class Screen2 extends StatelessWidget {
   Screen2({super.key});
 
@@ -263,9 +256,7 @@ class Screen2 extends StatelessWidget {
 }
 
 
-// ----------------------------------------------------
-// Screen3 - 學習計畫 (維持不變，僅做了小修正)
-// ----------------------------------------------------
+
 class Screen3 extends StatelessWidget {
   const Screen3({super.key});
 
@@ -350,9 +341,7 @@ class Screen3 extends StatelessWidget {
   }
 }
 
-// ----------------------------------------------------
-// Screen4 - 專業方向 (新增)
-// ----------------------------------------------------
+
 class Screen4 extends StatelessWidget {
   const Screen4({super.key});
 
